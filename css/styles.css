@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/apps-musica.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 450px;
+    height: 100%;
+    overflow: auto;
+}
+
+.main__title {
+    text-align: center;
+    margin: 10px;
+}
+
+.main__options--button {
+    display: block;
+    background-color: rgb(11, 163, 173);
+    width: 250px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px auto;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main__options--image {
+    display: block;
+    width: 250px;
+    height: 150px;
+    margin: 10px auto;
+}
+
+.main__options--description {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 23px;
+}
+
+hr {
+    border-color: #000;
+    width: 300px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main__title {
+        margin: 0;
+    }
+    
+    .main__options--button {
+        margin: 0;
+    }
+    
+    .main__options--image {
+        margin: 0;
+    }
+    
+    .main__options--description {
+        margin: 0;
+    }
+    
+    hr {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+/* En celulares, de preferencia quitar las imagenes de fondo para evitar consumir tantos datos */
+    body {
+        background: none;
+    }
+
+    .main {
+        display: block;
+    }
+
+    .main__title {
+        margin: 10px;
+    }
+    
+    .main__options--button {
+        margin: 10px auto;
+    }
+    
+    .main__options--image {
+        margin: 10px auto;
+    }
+    
+    .main__options--description {
+        margin: 0 auto;
+    }
+    
+    hr {
+        margin: auto;
+    }
+}
